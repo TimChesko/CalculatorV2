@@ -31,7 +31,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:showDividers="middle"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/marginTopLinerLayout">
 
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleButtonLineFirst"
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/delete"
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
 
             <Button
@@ -64,7 +64,7 @@
                 android:text="@string/percent"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"/>
+                android:padding="@dimen/paddingButton"/>
 
             <Button
                 android:id="@+id/division"
@@ -74,7 +74,7 @@
                 android:layout_weight="0"
                 android:text="@string/division"
                 android:textSize="@dimen/textSizeButton"
-                android:padding="5dp"/>
+                android:padding="@dimen/paddingButton"/>
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
 
@@ -87,7 +87,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:showDividers="middle"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/marginTopLinerLayout">
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleButtonLineSecond"
             android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
                 android:text="@string/_1"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/secondNum"
@@ -108,7 +108,7 @@
                 android:text="@string/_2"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/thirdNum"
@@ -117,7 +117,7 @@
                 android:text="@string/_3"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/multiplication"
@@ -126,7 +126,7 @@
                 android:text="@string/multiplication"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
@@ -140,7 +140,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:showDividers="middle"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/marginTopLinerLayout">
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleButtonLineThird"
             android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
                 android:text="@string/_4"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/fifthNum"
@@ -161,7 +161,7 @@
                 android:text="@string/_5"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/sixthNum"
@@ -170,7 +170,7 @@
                 android:text="@string/_6"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/minus"
@@ -179,7 +179,7 @@
                 android:text="@string/minus"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
@@ -193,7 +193,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:showDividers="middle"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/marginTopLinerLayout">
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleButtonLineFourth"
             android:layout_width="wrap_content"
@@ -205,7 +205,7 @@
                 android:text="@string/_7"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/eighthNum"
@@ -214,7 +214,7 @@
                 android:text="@string/_8"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/ninthNum"
@@ -223,7 +223,7 @@
                 android:text="@string/_9"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/plus"
@@ -232,7 +232,7 @@
                 android:text="@string/plus"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
@@ -246,7 +246,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:showDividers="middle"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/marginTopLinerLayout">
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleButtonLineFifth"
             android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 android:text="save"
                 />
             <Button
@@ -267,7 +267,7 @@
                 android:text="@string/_0"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/dote"
@@ -276,7 +276,7 @@
                 android:text="@string/dote"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
             <Button
                 android:id="@+id/equally"
@@ -285,7 +285,7 @@
                 android:text="@string/equally"
                 android:textSize="@dimen/textSizeButton"
                 android:layout_weight="0"
-                android:padding="5dp"
+                android:padding="@dimen/paddingButton"
                 />
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>

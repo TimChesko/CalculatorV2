@@ -2,4 +2,8 @@
 <resources>
     <dimen name="textSizeButton">25sp</dimen>
     <dimen name="layout_weight_button">1</dimen>
+    <dimen name="padding">25dp</dimen>
+    <dimen name="textSizeTextView">20sp</dimen>
+    <dimen name="marginTopLinerLayout">16dp</dimen>
+    <dimen name="paddingButton">5dp</dimen>
 </resources>
