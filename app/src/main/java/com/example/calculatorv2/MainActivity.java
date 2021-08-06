@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,9 +16,10 @@ public class MainActivity extends AppCompatActivity {
             firstNum, secondNum, thirdNum, multiplication,
             fourthNum, fifthNum, sixthNum, minus,
             seventhNum, eighthNum, ninthNum, plus,
-            change, zeroNum, dote, equally;
+            save, zeroNum, dote, equally;
 
     EditText input;
+    TextView history;
 
     float valueOne, valueTwo;
 
@@ -46,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         clear = (Button) findViewById(R.id.clear);
         equally = (Button) findViewById(R.id.equally);
         input = (EditText) findViewById(R.id.input);
+        history = (TextView) findViewById(R.id.history);
+        save = (Button) findViewById(R.id.save);
+        delete = (Button) findViewById(R.id.delete);
+        percent = (Button) findViewById(R.id.percent);
 
 
         firstNum.setOnClickListener(new View.OnClickListener() {
@@ -197,6 +203,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 input.setText(input.getText() + ".");
+            }
+        });
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                history.setText(input.getText());
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1 = input.getText().toString();
+                input.setText(num1.substring(0,num1.length()-1));
+            }
+        });
+
+        percent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input.setText(Integer.parseInt(input.getText().toString()) / 100);
             }
         });
     }
