@@ -19,4 +19,5 @@
     <string name="delete">del</string>
     <string name="dote">.</string>
     <string name="percent">%</string>
+    <string name="textHintAnswer">Тут должно быть выражение</string>
 </resources>
