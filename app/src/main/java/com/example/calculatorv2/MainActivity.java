@@ -127,14 +127,9 @@ public class MainActivity extends AppCompatActivity {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (input == null) {
-                    input.setText("");
-                } else {
-                    valueOne = Float.parseFloat(input.getText() + "");
-                    crunchifyAddition = true;
-                    input.setText(null);
-                }
+                valueOne = Float.parseFloat(input.getText() + "");
+                crunchifyAddition = true;
+                input.setText(null);
             }
         });
 
@@ -224,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
         percent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText(Integer.parseInt(input.getText().toString()) / 100);
+                input.setText(Double.parseDouble(input.getText().toString()) / 100.0+"");
             }
         });
     }
