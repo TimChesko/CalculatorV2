@@ -2,21 +2,37 @@ package com.example.calculatorv2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button clear, delete, percent, division,
-            firstNum, secondNum, thirdNum, multiplication,
-            fourthNum, fifthNum, sixthNum, minus,
-            seventhNum, eighthNum, ninthNum, plus,
-            save, zeroNum, dote, equally;
+    Button clear;
+    Button delete;
+    Button percent;
+    Button division;
+    Button firstNum;
+    Button secondNum;
+    Button thirdNum;
+    Button multiplication;
+    Button fourthNum;
+    Button fifthNum;
+    Button sixthNum;
+    Button minus;
+    Button seventhNum;
+    Button eighthNum;
+    Button ninthNum;
+    Button plus;
+    Button save;
+    Button zeroNum;
+    Button dote;
+    Button equally;
+    ImageButton menu;
 
     EditText input;
     TextView history;
@@ -52,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         save = (Button) findViewById(R.id.save);
         delete = (Button) findViewById(R.id.delete);
         percent = (Button) findViewById(R.id.percent);
-
+        menu = (ImageButton) findViewById(R.id.menu);
 
         firstNum.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -222,5 +238,15 @@ public class MainActivity extends AppCompatActivity {
                 input.setText(Double.parseDouble(input.getText().toString()) / 100.0+"");
             }
         });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, settings.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }
