@@ -7,7 +7,7 @@ import android.widget.Button;
 
 public class settings extends MainActivity {
 
-    Button firstTheme, secondTheme, thirdTheme, fourthTheme, back;
+    Button firstTheme, secondTheme, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +16,6 @@ public class settings extends MainActivity {
 
         firstTheme = (Button) findViewById(R.id.firstTheme);
         secondTheme = (Button) findViewById(R.id.secondTheme);
-        thirdTheme = (Button) findViewById(R.id.thirdTheme);
-        fourthTheme = (Button) findViewById(R.id.fourthTheme);
         back = (Button) findViewById(R.id.back);
 
         back.setOnClickListener(new View.OnClickListener() {

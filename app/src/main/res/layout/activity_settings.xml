@@ -16,32 +16,13 @@
             android:id="@+id/firstTheme"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="1 theme"
+            android:text="Default theme"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/secondTheme"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="2 theme"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/secondLineTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/firstLineTheme">
-        <Button
-            android:id="@+id/thirdTheme"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="3 theme"
-            android:layout_weight="1"/>
-        <Button
-            android:id="@+id/fourthTheme"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="4 theme"
+            android:text="Trash theme"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -50,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="вернуться"
-        app:layout_constraintTop_toBottomOf="@id/secondLineTheme"
+        app:layout_constraintTop_toBottomOf="@id/firstLineTheme"
         style="@style/ButtonBack"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
